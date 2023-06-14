@@ -27,7 +27,7 @@ function MainPage(props) {
 		const options = {}
 		const callback = ( entries, observer ) => {
 			entries.forEach(entry => {
-				console.log("entry: ", entry)
+				
 				if(entry.isIntersecting) {
 					entry.target.src = entry.target.dataset.src
 					observer.unobserve(entry.target)
