@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react'
 
 function Card(props) {
 	const imgRef = useRef(null)
+	const { webp, image } = props
 
 	useEffect(() => {
 		const options = {};
@@ -23,7 +24,10 @@ function Card(props) {
 
 	return (
 		<div className="Card text-center">
-			<img data-src={props.image} ref={imgRef}/>
+			<picture>
+				<source data-srcset={webp} type='image/not-support'/>
+				<img data-src={image} ref={imgRef}/>
+			</picture>
 			<div className="p-5 font-semibold text-gray-700 text-xl md:text-lg lg:text-xl keep-all">
 				{props.children}
 			</div>
