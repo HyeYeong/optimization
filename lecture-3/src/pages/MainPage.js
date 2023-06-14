@@ -57,7 +57,7 @@ function MainPage(props) {
 					bgColor={'#f4f4f4'}
 					columns={[
 						<picture>
-							<source data-srcset={main_items_webp} type='image/not-support' />
+							<source data-srcset={main_items_webp} type='image/webp' />
 							<img data-src={main_items} ref={imgRef1} />,	
 						</picture>,
 						<Meta
@@ -76,7 +76,7 @@ function MainPage(props) {
 							btnLink={'/part'}
 						/>,
 						<picture>
-							<source data-srcset={main_parts_webp} type='image/not-support'/>
+							<source data-srcset={main_parts_webp} type='image/webp'/>
 							<img data-src={main_parts} ref={imgRef2} />
 						</picture>
 					]}
@@ -86,7 +86,7 @@ function MainPage(props) {
 					bgColor={'#f4f4f4'}
 					columns={[
 						<picture>
-							<source data-srcset={main_styles_webp} type='image/not-support'/>
+							<source data-srcset={main_styles_webp} type='image/webp'/>
 							<img data-src={main_styles} ref={imgRef3} />
 						</picture>,
 						<Meta
