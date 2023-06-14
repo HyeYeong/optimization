@@ -50,7 +50,7 @@ function MainPage(props) {
 					columns={[
 						<Card image={main1} webp={main1_webp}>롱보드는 아주 재밌습니다.</Card>,
 						<Card image={main2} webp={main2_webp}>롱보드를 타면 아주 신납니다.</Card>,
-						<Card image={main3} webp={main2_webp}>롱보드는 굉장히 재밌습니다.</Card>
+						<Card image={main3} webp={main3_webp}>롱보드는 굉장히 재밌습니다.</Card>
 					]}
 				/>
 				<TwoColumns
