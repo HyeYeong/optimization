@@ -1,7 +1,4 @@
 ## Lecture-3
-
-'프론트엔드 개발자를 위한, 실전 웹 성능 최적화(feat. React) - Part. 2'의 1번째 강의 소스입니다.
-
 ### 실행
 
 1. download sources
