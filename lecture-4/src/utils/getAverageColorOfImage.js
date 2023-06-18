@@ -12,8 +12,6 @@ export function getAverageColorOfImage(imgElement) {
     b: 0,
   };
 
-  cache[imgElement.src] = averageColor
-
   if (!context) {
     return averageColor;
   }
@@ -39,5 +37,6 @@ export function getAverageColorOfImage(imgElement) {
   averageColor.g = ~~(averageColor.g / count);
   averageColor.b = ~~(averageColor.b / count);
 
+  cache[imgElement.src] = averageColor
   return averageColor;
 }
